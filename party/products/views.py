@@ -38,3 +38,7 @@ def register(request):
     else:
         user_form = UserRegistrationForm()
     return render(request, 'register.html', {'user_form': user_form})
+
+def constructor(request):
+    context = {}
+    return render(request, 'constructor.html', context)
