@@ -5,11 +5,10 @@
     <title>Register done!</title>
 </head>
 <body>
-    {% block title %}Welcome{% endblock %}
-
+    {% load i18n %}
     {% block content %}
-        <h1>Welcome {{ new_user.first_name }}!</h1>
-        <p>Your account has been successfully created. Now you can <a href="{% url "login" %}">log in</a>.</p>
+        <h1>Добро пожаловать, {{ new_user.first_name }}!</h1>
+        <p>Ваш аккаунт был удачно создан. Теперь вы можете <a href="{% url "login" %}">войти в аккаунт</a>.</p>
     {% endblock %}
 </body>
 </html>

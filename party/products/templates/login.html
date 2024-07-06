@@ -5,13 +5,13 @@
     <title>Log-in</title>
 </head>
 <body>
-{% block content %}
-    <h1>Log-in</h1>
-    <p>Please, use the following form to log-in:</p>
+    {% block content %}
+    <h1>Вход в аккаунт</h1>
+    <p>Пожалуйста, используйте форму, чтобы войти в аккаунт:</p>
     <form action="." method="post">
         {{ form.as_p }}
         {% csrf_token %}
-        <p><input type="submit" value="Log-in"></p>
+        <p><input type="submit" value="Войти"></p>
     </form>
 {% endblock %}
 </body>
